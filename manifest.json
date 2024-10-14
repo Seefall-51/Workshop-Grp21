@@ -1,15 +1,13 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Workshop Extension",
 	"version": "1.0",
 	"description": "…",
 	"permissions": ["activeTab"],
 	"action": {
-		"default_popup": "popup.html",
-		"default_icon": {
-		"16": "./assets/img/chat-smile-16.svg",
-		"48": "./assets/img/chat-smile-48.svg",
-		"64": "./assets/img/chat-smile-64.svg"
+		"default_popup": "src/popup.html",
+		"icons": {
+			"16": "assets/img/chat-smile-16.png"
 		}
 	}
 }
