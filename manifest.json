@@ -3,14 +3,17 @@
 	"name": "Workshop Extension",
 	"version": "1.0",
 	"description": "…",
-	"permissions": ["tabs", "scripting"],
+	"permissions": ["activeTab", "scripting"],
 	"icons": 
 	{
 		"512": "./assets/img/logo-512.png"
 	},
+	"action": {
+		"default_popup": "src/popup.html"
+	},
 	"content_scripts": [
 		{
-			"matches": ["https://www.x.com"],
+			"matches": ["<all_urls>"],
 			"css": ["assets/css/popup.css"],
             "js": ["assets/js/functions.js"]
 		}
