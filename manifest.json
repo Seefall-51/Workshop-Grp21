@@ -1,0 +1,18 @@
+{
+	"manifest_version": 3,
+	"name": "Workshop Extension",
+	"version": "1.0",
+	"description": "…",
+	"permissions": ["tabs", "scripting"],
+	"icons": 
+	{
+		"512": "./assets/img/logo-512.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.x.com"],
+			"css": ["assets/css/popup.css"],
+            "js": ["assets/js/functions.js"]
+		}
+	]
+}

@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 16em;
+	font-size: 100%;
+}
+
+h1 {
+	color: white;
+	font-size: 90%;
+	text-align: center;
+}
+
+.popup {
+	padding: 0.5em;
+	background: rgb(48, 47, 47);
+}
+.popup-content {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+.popup-content div {
+	padding: 1em 0.5em;
+}
+
+.popup-content div span:first-of-type {
+	font-size: 80%;
+	color: rgb(255, 119, 0);
+	font-weight: bold;
+}
+
+.switch {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.switch input {
+	appearance: none;
+}
+
+.slider {
+	cursor: pointer;
+	width: 30px;
+	height: 16px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #7d7575;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: orange;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px orange;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.blurred-text {
+    filter: blur(0.5em);
+}
+
+.blurred-img {
+    filter: blur(1em);
+}
